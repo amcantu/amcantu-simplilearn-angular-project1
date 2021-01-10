@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'blogapp';
-}
+export class AppComponent {}
+
+//TODO List: 
+// Move toolbar to header component
+// Add Contact Form
+// Add NavBar: Posts, Contact
+// Create contact module
+// Publish to git
+// Generate documentation
+// Add NotFound component

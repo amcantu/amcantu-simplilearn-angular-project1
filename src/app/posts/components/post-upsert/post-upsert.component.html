@@ -1,0 +1,34 @@
+<form (ngSubmit)="onSubmit()" *ngIf="post">
+    <h1 *ngIf="isNew">Add New Post</h1>
+    <h1 *ngIf="!isNew">Edit Post Id: {{ post.Id }}</h1>
+
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput type="text" [(ngModel)]="post.Title" name="title">
+        <button mat-button *ngIf="post.Title" matSuffix mat-icon-button aria-label="Clear" (click)="post.Title=''">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+        <mat-label>Author</mat-label>
+        <input matInput type="text" [(ngModel)]="post.CreatedBy" name="createdBy">
+        <button mat-button *ngIf="post.CreatedBy" matSuffix mat-icon-button aria-label="Clear" (click)="post.CreatedBy=''">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+    <br>
+
+    <ngx-wig [(ngModel)]="post.Body" name="body"></ngx-wig>
+    <br>
+
+    <button type="button" mat-stroked-button (click)="goBack()">
+        <mat-icon aria-hidden="false" aria-label="chevron_left">chevron_left</mat-icon>
+        Back
+    </button>
+    <button type="submit" mat-flat-button color="primary">
+        <mat-icon aria-hidden="false" aria-label="Save entry">save</mat-icon>
+        Save
+    </button>
+</form>

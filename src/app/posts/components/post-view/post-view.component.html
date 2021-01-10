@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-header>
+        <img mat-card-avatar src="https://angular.io/assets/images/logos/angular/angular.svg">
+        <mat-card-title>{{post.Title}}</mat-card-title>
+        <mat-card-subtitle>By {{ post.CreatedBy }} At {{ post.CreatedAt | date}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content [innerHTML]="post.Body">
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-stroked-button color="primary" [routerLink]="['/posts/edit/' + post.Id]">EDIT</button>
+        <button mat-stroked-button color="warn" (click)="deletePost()">DELETE</button>
+    </mat-card-actions>
+</mat-card>

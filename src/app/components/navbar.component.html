@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <button mat-icon-button aria-label="Home" routerLink="/" >
+        <mat-icon>home</mat-icon>
+    </button>
+    <span>Food Blog</span>
+    <span class="fill-space"></span>
+    <button mat-flat-button color="primary" align="end" [routerLink]="['/posts/add']" style="margin:10px">
+        <mat-icon aria-hidden="false" aria-label="Add new entry">add</mat-icon>
+        Add new entry
+    </button>
+</mat-toolbar>
