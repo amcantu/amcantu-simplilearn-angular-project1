@@ -21,7 +21,12 @@ const routes: Routes = [
     data: {
       isNew: false
     } 
-  }
+  },
+  { 
+    path: '', 
+    redirectTo: 'list',
+    pathMatch: 'prefix'
+  },
 ];
 
 @NgModule({

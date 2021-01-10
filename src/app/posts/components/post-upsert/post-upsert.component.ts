@@ -35,7 +35,7 @@ export class PostUpsertComponent implements OnInit {
     if(this.isNew){
       this.postsService.add(this.post).subscribe(() => {
         alert("Saved successfully!!!");
-        this.router.navigate(['/list']);
+        this.goBack();
       });
     }
     else {
@@ -47,6 +47,6 @@ export class PostUpsertComponent implements OnInit {
   }
   
   goBack(){
-    this.router.navigate(['/list']);
+    this.router.navigate(['/']);
   }
 }

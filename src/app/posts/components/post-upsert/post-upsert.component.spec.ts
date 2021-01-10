@@ -91,7 +91,7 @@ describe('PostUpsertComponent', () => {
 
       expect(postsServiceSpy.add).toHaveBeenCalledTimes(1)
       expect(window.alert).toHaveBeenCalledTimes(1);
-      expect(routerSpy.navigate).toHaveBeenCalledWith(['/list']);
+      expect(routerSpy.navigate).toHaveBeenCalledWith(['/']);
     });
   });
 
@@ -136,7 +136,7 @@ describe('PostUpsertComponent', () => {
 
       expect(postsServiceSpy.edit).toHaveBeenCalledTimes(1)
       expect(window.alert).toHaveBeenCalledTimes(1);
-      expect(routerSpy.navigate).toHaveBeenCalledWith(['/list']);
+      expect(routerSpy.navigate).toHaveBeenCalledWith(['/']);
     });
   });
 });

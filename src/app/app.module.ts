@@ -10,12 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 //FoodBlog Building Blocks
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar.component'
+import { HeaderComponent } from './components/header/header.component'
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    HeaderComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
