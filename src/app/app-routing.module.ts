@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: () => import(`./posts/posts.module`).then(m => m.PostsModule) 
   },    
   { 
+    path: 'contact', 
+    loadChildren: () => import(`./contact/contact.module`).then(m => m.ContactModule) 
+  },    
+  { 
     path: '',   
     redirectTo: '/posts/list', // redirect to Posts Module
     pathMatch: 'full' 

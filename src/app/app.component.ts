@@ -6,8 +6,3 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {}
-
-//TODO List: 
-// Add Contact Form
-// Create contact module
-// Generate documentation

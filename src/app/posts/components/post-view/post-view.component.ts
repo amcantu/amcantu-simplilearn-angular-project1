@@ -4,7 +4,8 @@ import { PostsService } from 'src/app/posts/services';
 
 @Component({
   selector: 'app-post-view',
-  templateUrl: './post-view.component.html'
+  templateUrl: './post-view.component.html',
+  styles: [ `mat-card { margin-top: 10px; }` ]
 })
 export class PostViewComponent {
   @Input() post: Post;

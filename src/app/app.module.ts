@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 //FoodBlog App Modules
 import { SharedModule } from './shared.module';
 import { PostsModule } from './posts/posts.module';
+import { ContactModule } from './contact/contact.module';
 import { AppRoutingModule } from './app-routing.module';
 
 //FoodBlog Building Blocks
@@ -25,7 +26,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 
     AppRoutingModule,
     SharedModule,
-    PostsModule
+    PostsModule,
+    ContactModule
   ],
   bootstrap: [AppComponent]
 })

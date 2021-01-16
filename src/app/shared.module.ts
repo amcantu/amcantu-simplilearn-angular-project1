@@ -1,7 +1,7 @@
 //Angular Modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 //Plugin Modules
@@ -20,6 +20,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     
     //Angular
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
 
     //Angular Material + Plugins
@@ -35,6 +36,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   exports: [
     //Angular
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
 
     //Angular Material + Plugins
